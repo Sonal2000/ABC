@@ -46,6 +46,7 @@ header .site-title{
 .navbar-nav .nav-link{
     font-weight: 50px;
     color: black;
+    font-size: large;
 }
 .navbar-nav .nav-item .nav-link{
     padding: 0 1.3em;
@@ -58,9 +59,16 @@ header .site-title{
 }
 
 /*-----card 1--------*/
+.card{
+    overflow: hidden;
+}
+.card:hover .card-img-top{
+    transform: scale(1.5);
+}
 .card-img-top{
-    height: 200px;
-    width: 280px;
+    max-width: 100%;
+    transition: all 1.5s ease;
+    max-height: 100%;
 }
 .card-body{
     height:100px;
@@ -102,7 +110,7 @@ header .site-title{
   font-size: 10px;
   width: 30;
 }
-/*----------------card2------*/
+
 .product-h{
     color: black;
     font-size: 60px;
@@ -390,3 +398,5 @@ padding: 12px;
 margin-bottom: 5px;
 }
 }
+
+
